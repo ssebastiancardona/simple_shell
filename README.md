@@ -16,3 +16,6 @@
 	* /bin/ls = Lists the files.
 	* /bin/ls -a = List the files including hidden files.
 	* /bin/pwd = Show directory path.
+## Flowchart
+	* In this flowchart we can se how works our simple shell.
+	![Alt text](flowchart.png?raw=true)
