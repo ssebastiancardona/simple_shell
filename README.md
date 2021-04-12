@@ -11,3 +11,8 @@
 		- In this file is were we create a count for the tokenizator.
 ## Use
 	* You can use the files saved in /bin directory.
+	* It's a very basic shell, so you can't do as many things as in a normal shell.
+### Examples
+	* /bin/ls = Lists the files.
+	* /bin/ls -a = List the files including hidden files.
+	* /bin/pwd = Show directory path.
