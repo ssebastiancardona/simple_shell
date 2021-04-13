@@ -7,7 +7,7 @@ int count(char *buff)
 
         for(i = 0; buff[i] != '\0'; i++)
         {
-                if(buff[i] == 32 && buff[i] != 32 && buff[i + 1] != '\0')
+                if(buff[i] == 32 && buff[i + 1] != 32 && buff[i + 1] != '\0')
                         count++;
 
                 if(buff[0] != 32)
