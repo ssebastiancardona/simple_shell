@@ -13,6 +13,11 @@ int main(void)
 			exit(EXIT_SUCCESS);
 		}
 		read = getline(&buff, &num, stdin);
+		if(read == EOF)
+                {
+			free(buff);
+                        exit(EXIT_SUCCESS);
+                }
 		buff[read - 1] = '\0';
 		token(buff);
 	}
