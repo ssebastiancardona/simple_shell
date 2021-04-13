@@ -1,9 +1,9 @@
 #include "holberton.h"
-int token(char *buff)
+void token(char *buff)
 {
         char **token = NULL;
         char *help = NULL;
-        int i = 0, aux;
+        int i = 0;
 
         token = malloc((count(buff) + 1) * sizeof(char *));
         help = strtok(buff, " ");
@@ -11,7 +11,7 @@ int token(char *buff)
         {
                 token[i] = help;
                 help = strtok(NULL, " ");
-                i++;
+                i++;    
         }
         token[i] = help;
         execute(token);
