@@ -10,7 +10,7 @@
 
 extern char **environ;
 int main(void);
-int token(char *buff);
+void token(char *buff);
 int count(char *buff);
 int execute(char **token);
 
