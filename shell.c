@@ -7,11 +7,6 @@ int main(void)
 	while(read != EOF)
 	{
                 write(1, "$ ", 2);
-		if(read == EOF)
-		{
-			free(buff);
-			exit(EXIT_SUCCESS);
-		}
 		read = getline(&buff, &num, stdin);
 		if(read == EOF)
                 {
