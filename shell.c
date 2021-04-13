@@ -6,11 +6,12 @@ int main(void)
 	ssize_t num;
 	while(read != EOF)
 	{
-		/**if(read == EOF)
+                write(1, "$ ", 2);
+		if(read == EOF)
 		{
 			free(buff);
-			exit;
-		}*/
+			exit(EXIT_SUCCESS);
+		}
 		read = getline(&buff, &num, stdin);
 		buff[read - 1] = '\0';
 		token(buff);
