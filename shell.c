@@ -1,9 +1,9 @@
 #include "holberton.h"
 int main(void)
 {
-	ssize_t read;
+	ssize_t read = 0;
 	char *buff = 0;
-	ssize_t num;
+	size_t num = 0;
 	while(read != EOF)
 	{
                 write(1, "$ ", 2);
