@@ -1,10 +1,10 @@
 #include "holberton.h"
-void token(char *buff)
+int token(char *buff)
 {
         char **token = NULL;
         char *help = NULL;
         int i = 0, aux;
-        pid_t id;
+
         token = malloc((count(buff) + 1) * sizeof(char *));
         help = strtok(buff, " ");
         while(help != NULL)
@@ -14,9 +14,6 @@ void token(char *buff)
                 i++;
         }
         token[i] = help;
-        id = fork();
-        wait(NULL);
-        if(id == 0)
-                execve(token[0], token, environ);
+        execute(token);
         free(token);
 }
