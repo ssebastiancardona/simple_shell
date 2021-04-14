@@ -10,6 +10,8 @@
 
 extern char **environ;
 int main(void);
+void no_interactive(void);
+void interactive(void);
 void token(char *buff);
 int count(char *buff);
 int execute(char **token);
