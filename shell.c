@@ -10,7 +10,7 @@ void interactive(void)
 	char *buff = 0;
 	size_t num = 0;
 
-	while (read != EOF)
+	while (1)
 	{
 		write(1, "$ ", 2);
 		read = getline(&buff, &num, stdin);
@@ -22,6 +22,6 @@ void interactive(void)
 		}
 		buff[read - 1] = '\0';
 		token(buff);
-}
+        }
 free(buff);
 }
