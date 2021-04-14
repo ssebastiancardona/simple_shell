@@ -15,7 +15,7 @@ int execute(char **token)
 		if (execve(token[0], token, environ) == -1)
 		{
 			perror("Simple_Shell");
-			return (0);
+			exit(0);
 		}
 	}
 	return (1);
