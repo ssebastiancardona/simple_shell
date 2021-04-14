@@ -1,18 +1,25 @@
 #include "holberton.h"
+
+/**
+ * main - void
+ *Return: 0
+ **/
+
 int main(void)
 {
 	ssize_t read = 0;
 	char *buff = 0;
 	size_t num = 0;
-	while(read != EOF)
+
+	while (read != EOF)
 	{
-                write(1, "$ ", 2);
+		write(1, "$ ", 2);
 		read = getline(&buff, &num, stdin);
-		if(read == EOF)
-                {
+		if (read == EOF)
+		{
 			free(buff);
-                        exit(EXIT_SUCCESS);
-                }
+			exit(EXIT_SUCCESS);
+		}
 		buff[read - 1] = '\0';
 		token(buff);
 	}
