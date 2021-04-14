@@ -1,5 +1,5 @@
-#ifndef SHELL
-#define SHELL
+#ifndef _SHELL_HELL_
+#define _SHELL_HELL_
 
 #include <unistd.h>
 #include <stdio.h>
@@ -16,4 +16,4 @@ void token(char *buff);
 int count(char *buff);
 int execute(char **token);
 
-#endif
+#endif /* _SHELL_HELL_ */
