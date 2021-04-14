@@ -10,7 +10,6 @@ void no_interactive(void)
 	char *buff = 0;
 	size_t num = 0;
 
-	write(1, "\n$ ", 3);
 	read = getline(&buff, &num, stdin);
 	buff[read - 1] = '\0';
 	token(buff);
