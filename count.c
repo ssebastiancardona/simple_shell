@@ -9,7 +9,7 @@ int count(char *buff)
 	int estado = 0;
 	int contador = 0;
 
-	while (*buff != '\0')
+	while (*buff != NULL)
 	{
 		if (*buff == 32 || *buff == 10 || *buff == 9)
 		{
