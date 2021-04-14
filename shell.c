@@ -12,7 +12,7 @@ void interactive(void)
 
 	while (1)
 	{
-		write(1, "$ ", 2);
+		write(STDOUT_FILENO, "$ ", 2);
 		read = getline(&buff, &num, stdin);
 		if (read == EOF)
 		{
