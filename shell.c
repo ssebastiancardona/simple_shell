@@ -1,22 +1,26 @@
 #include "holberton.h"
+/**
+ * interactive - shell modo interactivo
+ *
+ * Return: canas
+*/
 void interactive(void)
 {
-	ssize_t read = 0;
-	char *buff = 0;
-	size_t num = 0;
-
-	while (read != EOF)
-	{
-                write(1, "$ ", 2);
-		read = getline(&buff, &num, stdin);
-		if(read == EOF)
-                {
-			free(buff);
-                        write(1, "\n", 1);
-                        exit(EXIT_SUCCESS);
-                }
-		buff[read - 1] = '\0';
-		token(buff);
-	}
-	free(buff);
+ssize_t read = 0;
+char *buff = 0;
+size_t num = 0;
+while (read != EOF)
+{
+write(1, "$ ", 2);
+read = getline(&buff, &num, stdin);
+if (read == EOF)
+{
+free(buff);
+write(1, "\n", 1);
+exit(EXIT_SUCCESS);
+}
+buff[read - 1] = '\0';
+token(buff);
+}
+free(buff);
 }
