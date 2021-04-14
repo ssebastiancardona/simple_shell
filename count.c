@@ -1,18 +1,25 @@
 #include "holberton.h"
-
+/**
+ * count - cuenta las palabras en el string
+ * @buff: buffer del getline
+ * Return: un entero con la cantidad de palabras
+*/
 int count(char *buff)
 {
-        int i;
-        int count;
-
-        for(i = 0; buff[i] != '\0'; i++)
-        {
-                if(buff[i] == 32 && buff[i + 1] != 32 && buff[i + 1] != '\0')
-                        count++;
-
-                if(buff[0] != 32)
-                        count++;
-        }
-        return(count);
+int estado = 0;
+int contador = 0;
+while (*buff != '\0')
+{
+if (*buff == 32 || *buff == 10 || *buff == 9)
+{
+estado = 0;
 }
-
+else if (estado == 0)
+{
+estado = 1;
+++contador;
+}
+++buff;
+}
+return (contador);
+}
