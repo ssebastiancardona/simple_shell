@@ -1,5 +1,5 @@
 #include "holberton.h"
-int main(void)
+void interactive(void)
 {
 	ssize_t read = 0;
 	char *buff = 0;
@@ -7,11 +7,6 @@ int main(void)
 	while(read != EOF)
 	{
                 write(1, "$ ", 2);
-		if(read == EOF)
-		{
-			free(buff);
-			exit(EXIT_SUCCESS);
-		}
 		read = getline(&buff, &num, stdin);
 		if(read == EOF)
                 {
@@ -22,5 +17,4 @@ int main(void)
 		token(buff);
 	}
 	free(buff);
-	return (0);
 }
