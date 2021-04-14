@@ -12,6 +12,7 @@ void interactive(void)
 		if(read == EOF)
                 {
 			free(buff);
+                        write(1, "\n", 1);
                         exit(EXIT_SUCCESS);
                 }
 		buff[read - 1] = '\0';
