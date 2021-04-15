@@ -1,0 +1,50 @@
+.TH man 1 "28 Nov 2019" "0.1" "simple_shell man page"
+
+.SH NAME
+.B simple_shell
+- Emulated shell command interpreter made in C to interact with a linux operating system.
+
+.SH SYNOPSIS
+./hsh [options] [file]
+
+.SH DESCRIPTION
+Simple_Shell is an sh-emulated command language interpreter that executes
+commands read from the standard input, interprets them and executes other commands.
+Commands can be typed directly to the running shell or can be put into a file(shell script) and be execute directly from the shell.
+
+
+.SH Return Value
+
+Always 0 for success, other number means failure.
+
+.SH PATH
+
+When locating a command, the shell first looks to see if it has a shell function by that name.
+It will look inside all directions in PATH env variable for executable.
+The shell searches each entry in PATH in turn for the command.
+The value of the PATH variable should be a series of entries separated bycolons.
+Each entry consists of a directory name. The current directory may be indicated implicitly by an empty directory name, or explicitly by a single period.
+
+
+
+.SH
+
+.SH OPTIONS
+.B simple_shell
+Command options will be typed after the main command followed by a space and a
+ '-' symbol.
+
+.SH EXAMPLE
+
+[command] [options]
+$ ls
+
+.SH SEE ALSO
+.I Betty(1)
+
+.SH BUGS
+No more than one space required after and before argument.
+There may be only one active coprocess at a time.
+
+.SH AUTHOR
+Sebastian Cardona, Mateo Henao Rendon, Juan Duque
