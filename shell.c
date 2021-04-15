@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * interactive - shell modo interactivo
+ * shell_interactive - shell modo interactivo
  *
  * Return: canas
 */
