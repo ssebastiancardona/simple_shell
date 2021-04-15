@@ -5,13 +5,13 @@
 */
 int main(void)
 {
-        if (!isatty(STDIN_FILENO))
-        {
-                no_interactive();
-        }
-        else
-        {
-                interactive();
-        }
-        return (0);
+	if (!isatty(STDIN_FILENO))
+	{
+		shell_no_interactive();
+	}
+	else
+	{
+		shell_interactive();
+	}
+	return (0);
 }
