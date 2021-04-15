@@ -4,7 +4,7 @@
  *
  * Return: canas
 */
-void no_interactive(void)
+void shell_no_interactive(void)
 {
 	ssize_t read = 0;
 	char *buff = 0;
