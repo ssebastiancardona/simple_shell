@@ -4,7 +4,7 @@
  *
  * Return: canas
 */
-void interactive(void)
+void shell_interactive(void)
 {
 	ssize_t read = 0;
 	char *buff = 0;
@@ -22,6 +22,6 @@ void interactive(void)
 		}
 		buff[read - 1] = '\0';
 		token(buff);
-        }
+	}
 free(buff);
 }
