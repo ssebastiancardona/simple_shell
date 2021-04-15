@@ -28,7 +28,7 @@
 		- gcc -Wall -Werror -Wextra -pedantic *.c
 ## Flowchart
 	* In this flowchart we can se how works our simple shell.
-	![Alt text](flowchart.png)
+	![Alt text](flowchart2.png)
 #### Credits
 	* Sebastian Cardona
 	* Juan Duque
