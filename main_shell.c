@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - controla modo interactivo y no interactivo
+ * main - enter to interactive or non-interactive mode
  * Return: 0
 */
 int main(void)
