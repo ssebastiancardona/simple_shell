@@ -35,6 +35,14 @@ Command options will be typed after the main command followed by a space and a
  '-' symbol.
 
 .SH EXAMPLE
+First compilate
+gcc -Werror -Wextra -Wall -pedantic *.c -o hsh
+then execute
+./hsh
+You should see the prompt
+$
+then enter the path with the command
+/bin/ls
 
 [command] [options]
 $ ls -l
