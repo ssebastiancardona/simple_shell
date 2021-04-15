@@ -1,4 +1,4 @@
-.TH man 1 "28 Nov 2019" "0.1" "simple_shell man page"
+.TH man 1 "13 April 2021" "0.1" "simple_shell man page"
 
 .SH NAME
 .B simple_shell
@@ -24,10 +24,10 @@ It will look inside all directions in PATH env variable for executable.
 The shell searches each entry in PATH in turn for the command.
 The value of the PATH variable should be a series of entries separated bycolons.
 Each entry consists of a directory name. The current directory may be indicated implicitly by an empty directory name, or explicitly by a single period.
+A common value is ''/usr/gnu/bin:/usr/local/bin:/usr/ucb:/bin:/usr/bin''.
 
-
-
-.SH
+.SH PROMPT
+when executing interactively displays the $ sign and waits a command to be tap.
 
 .SH OPTIONS
 .B simple_shell
@@ -37,7 +37,7 @@ Command options will be typed after the main command followed by a space and a
 .SH EXAMPLE
 
 [command] [options]
-$ ls
+$ ls -l
 
 .SH SEE ALSO
 .I Betty(1)
